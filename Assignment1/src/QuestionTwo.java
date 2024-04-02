@@ -10,11 +10,11 @@ public class QuestionTwo {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter a Number: ");
 		
-		if(sc.hasNextDouble()) 
+		if(sc.hasNextDouble() && !sc.hasNextInt()) 
 		{
 			num1 = sc.nextDouble();
 			System.out.print("Enter another Number: ");
-			if(sc.hasNextDouble())
+			if(sc.hasNextDouble() && !sc.hasNextInt())
 			{
 				num2 = sc.nextDouble();
 				avg = (num1 + num2)/2;
