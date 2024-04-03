@@ -1,5 +1,4 @@
-package com.rohit.q1;
-import java.util.Scanner;
+package q1.com;
 
 public class InvoiveTest {
 

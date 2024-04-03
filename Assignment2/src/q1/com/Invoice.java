@@ -1,4 +1,4 @@
-package com.rohit.q1;
+package q1.com;
 import java.util.Scanner;
 
 public class Invoice {
@@ -60,9 +60,10 @@ public class Invoice {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the Part Number: ");
 		pnum = sc.next();
-		sc.nextLine();
+		
 		System.out.print("Enter the Part Description : ");
-		pdesc = sc.next();
+		sc.nextLine();
+		pdesc = sc.nextLine();
 		System.out.print("Enter the Quantity: ");
 		quantity = sc.nextInt();
 		if(quantity<0) {
