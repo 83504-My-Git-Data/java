@@ -47,6 +47,7 @@ public class Point2D {
 		return details;
 	}
 
+	
 	public boolean isEqual(Point2D p) {
 		return x == p.getX() && y == p.getY();
 	}
