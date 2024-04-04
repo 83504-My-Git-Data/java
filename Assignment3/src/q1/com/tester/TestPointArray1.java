@@ -42,6 +42,10 @@ public class TestPointArray1 {
 				int index;
 				System.out.println("Enter the Index of Desired point: ");
 				index = sc.nextInt();
+				if(index<0 || index>=points.length ) {
+					System.out.println("Invalid Index!!");
+					break;
+				}
 				System.out.println(points[index].getDetails());
 				System.out.println("_________________________________________________________");
 
@@ -60,6 +64,10 @@ public class TestPointArray1 {
 				int i = sc.nextInt();
 				System.out.println("Enter the Index of End Point: ");
 				int j = sc.nextInt();
+				if(i<0 || i>=points.length && j<0 || j>=points.length ) {
+					System.out.println("Invalid Index!!");
+					break;
+				}
 				System.out.println("P1 is Equal to P2:"+points[i].isEqual(points[j]));
 				if(!points[i].isEqual(points[j]))
 				{
